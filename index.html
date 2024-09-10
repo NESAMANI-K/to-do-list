@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <section class="tasks-section">
+            <div class="task-category" id="high-priority">
+                <h2>High Priority</h2>
+                <ul class="task-list" id="high-priority-list"></ul>
+                <button class="add-task" onclick="addTask('high')">+ New</button>
+            </div>
+            <div class="task-category" id="medium-priority">
+                <h2>Medium Priority</h2>
+                <ul class="task-list" id="medium-priority-list"></ul>
+                <button class="add-task" onclick="addTask('medium')">+ New</button>
+            </div>
+            <div class="task-category" id="low-priority">
+                <h2>Low Priority</h2>
+                <ul class="task-list" id="low-priority-list"></ul>
+                <button class="add-task" onclick="addTask('low')">+ New</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
